@@ -1,0 +1,19 @@
+@use "../base/variables";
+
+#skills {
+    background-color: variables.$color-third;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em 10% 1em 10%;
+    line-height: 4em;
+    font-family: variables.$font-second;
+}
+
+.skills__title {
+    color: variables.$color-first;
+    font-size: 2.5em;
+    font-family: variables.$font-first;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid variables.$color-first;
+}

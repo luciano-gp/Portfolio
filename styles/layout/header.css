@@ -1,0 +1,35 @@
+/* Cores */
+/* Fontes */
+.header {
+  display: flex;
+  margin: 0px 5%;
+  height: 5em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 4em;
+}
+
+.header__menu {
+  display: inline-block;
+}
+
+.header__menu__item,
+.header__menu__button {
+  margin: 0 1em;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  color: #0f0c06;
+}
+
+.header__menu__item:hover {
+  color: #5ab8c2;
+}
+
+.header__underline {
+  border-style: solid;
+  margin-right: 85%;
+  border-color: #0f0c06;
+}/*# sourceMappingURL=header.css.map */

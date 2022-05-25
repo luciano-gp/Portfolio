@@ -1,0 +1,44 @@
+@use "../base/variables";
+
+#anuncio {
+    color: variables.$color-second;
+    text-align: center;
+    padding: 10em 0;
+}
+
+.anuncio__chamado {
+    position: relative;
+    font-size: 5em;
+    margin: 0 10%;
+    line-height: 1.3em;
+    font-family: variables.$font-third;
+}
+  
+.anuncio__chamado:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: variables.$color-third;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+  
+.anuncio__chamado:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(0.7);
+}
+
+.anuncio__resposta {
+    color: variables.$color-second;
+    font-family: variables.$font-second;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 1em;
+}

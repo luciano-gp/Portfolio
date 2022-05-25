@@ -1,0 +1,41 @@
+/* Cores */
+/* Fontes */
+.button {
+  border: 0.15em solid;
+  border-radius: 0.4em;
+  border-color: transparent;
+  padding: 0.5em 0.5em;
+  margin: -0.5em 0;
+  background-color: #5ab8c2;
+  color: #f9fdff;
+}
+
+.button__skills {
+  border: 0.15em solid;
+  border-radius: 0.4em;
+  border-color: #f9fdff;
+  padding: 0.5em 0.5em;
+  margin-right: 0.5em;
+  color: #f9fdff;
+}
+
+.button:hover {
+  color: #5ab8c2;
+  border-color: #5ab8c2;
+  background-color: #f9fdff;
+}
+
+.button__skills--ouro:hover {
+  color: gold;
+  border-color: gold;
+}
+
+.button__skills--prata:hover {
+  color: silver;
+  border-color: silver;
+}
+
+.button__skills--bronze:hover {
+  color: brown;
+  border-color: brown;
+}/*# sourceMappingURL=button.css.map */
