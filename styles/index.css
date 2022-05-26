@@ -685,6 +685,7 @@ table {
     display: block;
     padding: 1em 0;
     text-align: center;
+    color: #0f0c06;
   }
 
   .header__menu__item--portfolio:visited {
