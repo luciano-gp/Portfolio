@@ -655,8 +655,10 @@ table {
     left: 0;
     right: 0;
     background-color: #5ab8c2;
+    padding: 0 5%;
     z-index: 2;
     box-shadow: 0 0 2px 1px #0f0c06;
+    width: 100%;
   }
 
   .header__menu {
@@ -674,6 +676,12 @@ table {
   }
 
   .header__menu__item {
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  .header__menu__item--portfolio {
     display: block;
     padding: 1em 0;
     text-align: center;
