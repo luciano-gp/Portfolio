@@ -41,24 +41,12 @@
     padding: 0.5em 1em;
 }
 
-.header__menu__item--portfolio {
-    color: variables.$color-first;
-}
-
 .header__menu__button {
     color: variables.$color-first;
 }
 
 .header__menu__item:hover {
     color: variables.$color-third;
-}
-
-.header__menu__item--portfolio:visited:hover {
-    color: variables.$color-second;
-}
-
-.header__menu__item--portfolio:visited {
-    color: variables.$color-first;
 }
 
 .header__menu__item--active:visited {
@@ -88,6 +76,25 @@
 .header__check,
 .header__toggle {
     display: none;
+}
+
+.header__menu__item--portfolio {
+    color: variables.$color-first;
+    font-size: variables.$font-size;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 1em;
+}
+
+.header__menu__item--portfolio:hover {
+    color: variables.$color-second;
+}
+
+.header__menu__item--portfolio:visited {
+    color: variables.$color-first;
+}
+
+.header__menu__item--portfolio:visited:hover {
+    color: variables.$color-second;
 }
 
 @media only screen and (max-width: 800px) {
