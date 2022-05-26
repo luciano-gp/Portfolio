@@ -1,0 +1,52 @@
+@use "../base/variables";
+
+#container__portfolio {
+    background-color: variables.$color-third;
+    font-family: variables.$font-second;
+}
+
+.portfolio__title {
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 0 2em 0;
+    color: variables.$color-first;
+}
+
+#portfolio {
+    display: flex;
+    overflow: auto hidden;
+    padding: 0 0 2em 5%;
+    scrollbar-width: none;
+    gap: 5em;
+    flex-wrap: nowrap;
+}
+
+#portfolio::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+.slider__image {
+    height: 50em;
+}
+
+.slider__image:last-child {
+    padding-right: 3em;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #portfolio {
+        padding-left: 0;
+    }
+
+    .portfolio__title {
+        padding-top: 3.5em;
+        padding-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .slider__image:last-child {
+        padding-right: 0;
+    }
+}

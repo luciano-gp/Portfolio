@@ -12,15 +12,29 @@
     <script src="https://kit.fontawesome.com/140ccd80a6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=IBM+Plex+Mono&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=IBM+Plex+Mono&family=Parisienne&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <meta property="og:title" content="Portfólio Luciano Gomes">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Conheça um pouco mais sobre o desenvolvedor">
+    <meta property="og:image" content="https://sempreupdate.com.br/wp-content/uploads/2019/02/qual-a-diferenca-entre-programador-e-desenvolvedor.jpg">
+    <meta name="twitter:description" content="Conheça um pouco mais sobre o desenvolvedor">
+    <meta name="twitter:title" content="Portfólio Luciano Gomes">
+    <meta name="twitter:image" content="https://sempreupdate.com.br/wp-content/uploads/2019/02/qual-a-diferenca-entre-programador-e-desenvolvedor.jpg">
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="images/logopreto.svg" alt="logo composto por um pont, uma barra e uma letre ele">
+        <label for="sanduiche" class="header__toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input id="sanduiche" class="header__check" type="checkbox">
+        <a href="index.html">
+            <img class="header__logo" src="images/logopreto.svg" alt="logo composto por um pont, uma barra e uma letra ele">
+        </a>
         <nav class="header__menu">
-            <a href="#" class="header__menu__item">PORTFÓLIO</a>
-            <a href="#" class="button header__menu__button">CONTATO</a>
+            <a href="index.html" class="header__menu__item header__menu__item--active">HOME</a>
+            <a href="portfolio.html" class="header__menu__item">PORTFÓLIO</a>
+            <a href="contato.html" class="header__menu__item">CONTATO</a>
         </nav>
     </header>
     <hr class="header__underline">
@@ -32,10 +46,12 @@
         </div>
         <div class="banner__text">
             <div class="banner__text__title texto__typewriter texto__typewriter__cursor"><h1>Hello World!</h1></div>
-            <div class="banner__text__introduction"><p>Me chamo Luciano Gomes, sou estudante de TI e formando em Gestão de Marketing.
+            <div class="banner__text__introduction">
+                <p>Me chamo Luciano Gomes, sou estudante de TI e formando em Gestão de Marketing.
                 Tenho 22 anos, sou natural de Guaporé - RS e atualmente resido em Lajeado - RS.
-                <br>Busco desenvolver minhas habilidades para me tornar um programador fullstack.
-                <br>Além disso, me interesso pela área de UX design e comportamento do consumidor.</p></div>
+                <br>Busco desenvolver minhas habilidades para me tornar um </p><h1>programador fullstack.</h1>
+                <br><p>Além disso, me interesso pela área de UX design e comportamento do consumidor.</p>
+            </div>
             <div class="banner__text__tags"><p><em>#Desenvolvedor #WebDesign #Marketing</em></p></div>
             <div class="banner__text__button">
                 <a href="#skills" class="button banner__button">Saiba +</a>
@@ -46,19 +62,22 @@
     <section id="skills">
         <h2 class="skills__title">SKILLS</h2>
         <div class="skills__skills">
-            <span class="button__skills button__skills--ouro">HTML5</span>
-            <span class="button__skills button__skills--ouro">CSS3</span>
-            <span class="button__skills button__skills--ouro">JAVA</span>
-            <span class="button__skills button__skills--prata">JAVASCRIPT</span>
-            <span class="button__skills button__skills--bronze">NODEJS</span>
-            <span class="button__skills button__skills--bronze">WORDPRESS</span>
-            <span class="button__skills button__skills--prata">FIGMA</span>
-            <span class="button__skills button__skills--prata">DESIGNER</span>
-            <span class="button__skills button__skills--ouro">CORELDRAW</span>
-            <span class="button__skills button__skills--bronze">DATABASE</span>            
-            <span class="button__skills button__skills--prata">UXDESIGN</span>            
-            <span class="button__skills button__skills--ouro">AUTOCAD</span>            
-            <span class="button__skills button__skills--ouro">INVENTOR</span>   
+            <span class="button__skills">HTML5</span>
+            <span class="button__skills">CSS3</span>
+            <span class="button__skills">JAVA</span>
+            <span class="button__skills">JAVASCRIPT</span>
+            <span class="button__skills">NODEJS</span>
+            <span class="button__skills">REACT</span>
+            <span class="button__skills">WORDPRESS</span>           
+            <span class="button__skills">SEO</span>           
+            <span class="button__skills">SEM</span>
+            <span class="button__skills">FIGMA</span>
+            <span class="button__skills">DESIGNER</span>
+            <span class="button__skills">CORELDRAW</span>
+            <span class="button__skills">DATABASE</span>            
+            <span class="button__skills">UXDESIGN</span>            
+            <span class="button__skills">AUTOCAD</span>            
+            <span class="button__skills">INVENTOR</span>
         </div>
     </section>
 
@@ -89,10 +108,10 @@
         </div>
     </section>
 
-    <section id="anuncio">
-            <p class="anuncio__chamado">PROCURANDO UM<br>DESENVOLVEDOR?</p>
+    <div id="anuncio">
+            <p class="anuncio__chamado"><em>PROCURANDO UM<br>DESENVOLVEDOR?</em></p>
             <p class="anuncio__resposta">VAMOS TRABALHAR JUNTOS!</p>
-    </section>
+    </div>
 
     <footer id="footer">
         <a href="https://wa.me/5554996505713" target="_blank">
@@ -106,7 +125,10 @@
         </a>
         <a href="mailto:luciano.gp99@gmail.com" target="_blank">
             <i class="footer__icons fa-solid fa-inbox"></i>
-        </a>
+        </a><br>
+        <span class="footer__copy">
+            &copy;2022 Todos direitos reservados
+        </span>
     </footer>
 </body>
 </html>

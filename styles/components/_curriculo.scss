@@ -1,0 +1,61 @@
+@use "../base/variables";
+
+#curriculo {
+    background-color: variables.$color-third;
+    display: flex;
+    padding: 3em 10%;
+    justify-content: space-between;
+}
+
+.curriculo__title {
+    color: variables.$color-first;
+    font-size: 1.5em;
+    font-family: variables.$font-first;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid variables.$color-first;
+}
+
+.curriculo__empregos,
+.curriculo__estudos {
+    color: variables.$color-first;
+    line-height: 1.2em;
+    transform: translateX(0) scale(1);
+    transition: all .3s ease-in-out;
+    width: 50%;
+}
+
+.curriculo__empregos {
+    margin-right: 10%;
+}
+
+.curriculo__empregos__empresa,
+.curriculo__estudos__curso {
+    font-family: variables.$font-second;
+}
+
+.curriculo__empregos__funcao,
+.curriculo__estudos__descricao {
+    font-family: variables.$font-second;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+.curriculo__empregos:hover,
+.curriculo__estudos:hover {
+    transform: translateX(0) scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+    
+    #curriculo {
+        flex-direction: column;
+    }
+
+    .curriculo__empregos,
+    .curriculo__estudos {
+        width: 100%;
+        margin-bottom: 2em;
+        line-height: 1.5em;
+    }
+}

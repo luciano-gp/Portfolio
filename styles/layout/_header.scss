@@ -1,0 +1,153 @@
+@use "../base/variables";
+
+.header {
+    display: flex;
+    height: 5em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.header__logo {
+    width: 4em;
+}
+
+.header__menu {
+    display: inline-block;
+}
+
+.header__menu__item,
+.header__menu__button {
+    margin: 0 1em;
+    font-family: variables.$font-second;
+    font-size: variables.$font-size;
+}
+
+.header__menu__item {
+    color: variables.$color-second;
+}
+
+.header__menu__item--active {
+    background-color: variables.$color-third;
+    color: variables.$color-first;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+.header__menu__item--active2 {
+    background-color: variables.$color-second;
+    color: variables.$color-first;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+.header__menu__item--portfolio {
+    color: variables.$color-first;
+}
+
+.header__menu__button {
+    color: variables.$color-first;
+}
+
+.header__menu__item:hover {
+    color: variables.$color-third;
+}
+
+.header__menu__item--portfolio:visited:hover {
+    color: variables.$color-second;
+}
+
+.header__menu__item--portfolio:visited {
+    color: variables.$color-first;
+}
+
+.header__menu__item--active:visited {
+    color: variables.$color-first;
+}
+
+.header__menu__item--active2:visited {
+    color: variables.$color-first;
+}
+
+.header__underline {
+    border-style: solid;
+    margin: 0 85% 0 0;
+    border-color: variables.$color-second;
+}
+
+.header--portfolio {
+    background-color: variables.$color-third;
+    width: 100%;
+    padding: 0 5%;
+    height: 5em;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.header__check,
+.header__toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: variables.$color-first;
+        padding: 0 5%;
+        z-index: 2;
+        box-shadow: 0 0 2px 1px variables.$color-second;
+        width: 100%;
+    }
+
+    .header__underline {
+        display: none;
+    }
+
+    .header--portfolio {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: variables.$color-third;
+        z-index: 2;
+        box-shadow: 0 0 2px 1px variables.$color-second;
+    }
+
+    .header__menu {
+        display: block;
+        position: fixed;
+        top: 5em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+        padding: 0 10%;
+        background-color: variables.$color-first;
+        padding-top: 1em;
+    }
+    
+    .header__menu__item {
+        display: block;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .header__menu__item--portfolio:visited {
+        color: variables.$color-second;
+    }
+
+    .header__toggle {
+        display: block;
+    }
+
+    .header__check:checked ~ .header__menu {
+        transform: translateX(0);
+    }
+    
+}

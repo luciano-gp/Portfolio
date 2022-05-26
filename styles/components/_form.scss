@@ -1,0 +1,103 @@
+@use "../base/variables";
+
+#form {
+    margin: 0 10%;
+}
+
+.form {
+    margin-bottom: 1em;
+    position: relative;
+    border: 2px solid transparent;
+    border-bottom-right-radius: 5px;
+}
+
+.form::after {
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: variables.$color-first;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.form:hover {
+    border-bottom: solid 2px variables.$color-third;
+    border-right: solid 2px variables.$color-third;
+}
+
+.form__title {
+    font-family: variables.$font-first;
+    font-size: 3em;
+    text-align: center;
+    color: variables.$color-second;
+}
+
+.form__text {
+    font-family: variables.$font-first;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: variables.$color-second;
+    padding: 2em 20%;
+    text-align: justify;
+}
+
+.form__item {
+    width: 100%;
+}
+
+.form__item__input {
+    width: 100%;
+    margin-bottom: 2em;
+    line-height: 2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid variables.$color-second;
+    background-color: variables.$color-first;
+    font-family: variables.$font-second;
+    font-size: variables.$font-size;
+}
+
+.form__item__input::placeholder {
+    color: variables.$color-second;
+    font-family: variables.$font-second;
+}
+
+.form__item__input:hover {
+    border-color: variables.$color-third;
+}
+
+.form__item__input:focus {
+    border: 2px solid variables.$color-third;
+    outline: none;
+}
+
+.form__button {
+    font-family: variables.$font-second;
+    font-size: variables.$font-size;
+    margin-bottom: 2em;
+}
+
+#clique__aqui {
+    color: variables.$color-third;
+}
+
+#clique__aqui:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .form__title {
+        padding-top: 2em;
+    }
+
+    .form__text {
+        padding: 2em 0;
+    }
+
+    .form__button {
+        width: 100%;
+    }
+}

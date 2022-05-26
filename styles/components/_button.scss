@@ -1,0 +1,76 @@
+@use "../base/variables";
+
+.button {
+    border: 0.15em solid;
+    border-radius: 0.4em;
+    border-color: transparent;
+    padding: 0.5em 0.5em;
+    margin: -0.5em 0;
+    background-color: variables.$color-third;
+    color: variables.$color-first;
+}
+
+.button--void {
+    border: 0.15em solid;
+    border-radius: 0.4em;
+    border-color: variables.$color-first;
+    padding: 0.5em 0.5em;
+    margin: -0.5em 0;
+    background-color: transparent;
+    color: variables.$color-first;
+}
+
+.button--void:hover {
+    color: variables.$color-second;
+    border-color: variables.$color-second;
+}
+
+.button--void:visited:hover {
+    color: variables.$color-second;
+    border-color: variables.$color-second;
+}
+
+.button--void:visited {
+    color: variables.$color-first;
+}
+
+.button--large {
+    padding: 0.5em 3em;
+}
+
+.button--medium {
+    padding: 0.5em 1.5em;
+}
+
+.button:visited,
+.button__white:visited {
+    color: variables.$color-first;
+}
+
+.button__skills {
+    border: 0.15em solid;
+    border-radius: 0.4em;
+    border-color: variables.$color-first;
+    padding: 0.5em 0.5em;
+    margin-right: 0.5em;
+    color: variables.$color-first;
+    transition: all .1s ease-in-out;
+}
+
+.button:hover {
+    color: variables.$color-third;
+    border-color: variables.$color-third;
+    background-color: variables.$color-first;
+}
+
+.button__skills:hover {
+    box-shadow: 2px 2px variables.$color-first;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+.button__white:hover {
+    color: variables.$color-third;
+    border-color: variables.$color-third;
+    background-color: variables.$color-first;
+}
